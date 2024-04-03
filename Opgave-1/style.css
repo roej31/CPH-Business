@@ -30,9 +30,14 @@ header span{
 main{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 10px 0px;
+    justify-content: space-between;
+}
+
+main> :not(.splash):not(.proces){
+    width: 100%;
 }
 
 .content{
@@ -45,13 +50,6 @@ main{
 
 .splash{
     height: 400px;
-}
-
-.proces-desktop{
-    height: 400px;
-    display: none;
-    background: var(--baggrund);
-    border: 1px solid var(--border);
 }
 
 .tilbud{
@@ -100,12 +98,8 @@ footer{
     padding: 10px;
 }
 
+
 @media screen and (min-width: 600px) {
-   
-}
-
-
-@media screen and (min-width: 800px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -113,25 +107,30 @@ footer{
         width: 50%;
     }
 
+    .splash, .proces{
+        width: 49%;
+    }
+
     .tilbud{
         display: flex;
         flex-direction: row;
         flex-direction: row-reverse;
     }
+}
 
+@media screen and (max-width: 600px){
     .splash{
-
+        order: -1;
+        width: 100%;
     }
-
-    .proces-desktop{
-        display: block;
-    }
-
+    
     .proces{
-        display: none;
+        order: 2;
+        width: 100%;
     }
 
 }
+
 
 @media screen and (min-width: 1200px) {
     main{
