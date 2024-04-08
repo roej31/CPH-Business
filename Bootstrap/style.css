@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+}
+
+.navbar{
+    background: lightgray;
+}
+
+.btn-danger{
+    background: rgb(241, 105, 89);
+}
+
+
+
+.footer{
+    background: lightgray;
+}
+
+.footer ul{
+    list-style: none;
+
+}
+
+.bi{
+    color: black;
+}
