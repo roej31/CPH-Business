@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    min-height: 100vh;
+    --background:#031624;
+    --footer:#2b3035;
+    --tekst:white;
+    --primary:#004b4a;
+    --secondary:#5fbe92;
+    --third:#30FFA4;
+    background: var(--background);
+    color: white;
+    background-image: url('/images/nnnoise1.svg');
+    background-position: center;
+    font-family: "Michroma", sans-serif;
+    font-style: normal;
+    letter-spacing: .5px;
+}
+
+
+.navbar-brand{
+    color: var(--secondary);
+}
+
+.nav-link{
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.container h2{
+    color: var(--secondary);
+    font-size: 45px;
+}
+
+.container p{
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.intro{
+    width: 70%;
+}
+
+.btn-primary{
+    background: var(--secondary);
+    color: var(--background);
+    border: none;
+}
+
+.modal-header{
+    background:var(--background);
+}
+
+.modal-body{
+    background: var(--background);
+    font-size: 14px;
+}
+
+.modal-title{
+    color: var(--secondary);
+}
+
+.modal-footer{
+    background: var(--background);
+}
+.btn-close{
+    color: var(--secondary);
+}
+
+.card{
+    position: relative;
+    border: none;
+    box-shadow: var(--secondary) 0px 0px 10px;
+    outline: none;
+    margin: 30px;
+
+}
+
+.card a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card-body{
+    background: var(--background);
+}
+
+.card-title{
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+.card-text{
+    color: var(--tekst);
+    font-size: 14px;
+}
+
+footer{
+    background: var(--footer);
+    color: var(--secondary);
+    font-size: 12px;
+    
+}
+@media screen and (max-width:900px) {
+    .intro{
+        width: 100%;
+    }
+
+}
